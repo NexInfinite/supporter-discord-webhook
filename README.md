@@ -3,6 +3,9 @@
 2. Click on `add a webhook` <br>![Step 2](Images/step2.png)
 3. Change the `payload url` to [this domain](#get-a-webhook) <br>![Step 3](Images/step3.png)
 4. Change the Content type to `application/json` <br>![Step 4](Images/step4.png)
+5. Leave `Secret` blank, keep `Active` checked and hit `Create webhook` <br>![Step 5](Images/step5.png)
+6. Please note, the first time you do this you should get a message in your discord server. 
+If this happens you have successfully completed the webhook. If not, please review you're steps or open an [Issue](https://github.com/NexInfinite/supporter-discord-webhook/issues).
 
 # Get a webhook
 To get your domain, open up discord and go to the channel you want your webhook to be sent to and go to `settings > Integrations > Webhooks` and click `new webhook`.
