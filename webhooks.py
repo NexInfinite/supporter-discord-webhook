@@ -40,10 +40,17 @@ def webhook():
               ]
             }
             requests.post(f"https://discord.com/api/webhooks/{webhook_id}/{webhook_auth}", json=webhook_send_json)
-            return "Run!"
-    except IndexError as e:
-        return e
+            return "Successfully sent webhook to discord!"
+    except Exception as e:
+        if data["hook"]["type"] == "SponsorsListing":
+            send_json = {
+                "content": "Github sponsor webhooks have now been added. Thanks for using my repo, starring it would mean to world to me and really helps out. "
+            }
+            requests.post(f"https://discord.com/api/webhooks/{webhook_id}/{webhook_auth}", json=send_json)
+            return "Setup complete! You will now receive notifications when someone supports you on github! <b>MORE FEATURES ARE COMING SOON</b>"
+        else:
+            return e
 
 
 if __name__ == "__main__":
-    app.run(host="localhost", port="7182")
+    app.run(host="localhost", port="8084")
