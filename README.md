@@ -14,7 +14,7 @@ This should look something like this `https://discord.com/api/webhooks/WEBHOOK_I
 In the example domain I've used `WEBHOOK_ID` and `WEBHOOK_AUTH`. 
 Copy these from your discord webhook and place them in this domain `https://julians.work/webhook?webhook_id=WEBHOOK_ID&webhook_auth=WEBHOOK_AUTH`. 
 Congratulations, you now have a webhook that will work for discord. 
-You can also add a variable `color` to the domain to get a custom colour on your embed. 
+You can also add a variable `color` to the domain to get a custom colour on your embed. This must be in decimal so convert from hex to decimal. 
 
 Your embed will look like this but the icon and title will change for the price of and user who supported you. 
 `Foo` will also change to the description of your package. __More customizations coming soon__. 
