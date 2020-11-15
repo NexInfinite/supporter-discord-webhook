@@ -1,10 +1,8 @@
 # How to use
 1. Go to your [webhook dashboard](https://github.com/sponsors/NexInfinite/dashboard/webhooks)
-2. Click on `add a webhook` ![Step 2](Images/step2.png)
-3. Change the `payload url` to [this domain](#get-a-webhook) ![Step 3](Images/step3.png)
-4. Change the Content type to `application/json` ![Step 4](Images/step4.png)
-
-![Step 4](Images/step4.png)
+2. Click on `add a webhook` <br>![Step 2](Images/step2.png)
+3. Change the `payload url` to [this domain](#get-a-webhook) <br>![Step 3](Images/step3.png)
+4. Change the Content type to `application/json` <br>![Step 4](Images/step4.png)
 
 # Get a webhook
 To get your domain, open up discord and go to the channel you want your webhook to be sent to and go to `settings > Integrations > Webhooks` and click `new webhook`.
